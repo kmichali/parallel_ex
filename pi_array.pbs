@@ -1,0 +1,10 @@
+#!/bin/sh
+#PBS -l walltime=0:10:00
+#PBS -l select=1:ncpus=1:mem=1gb
+
+#PBS -J 1-5
+
+module load intel-suite
+
+
+$PBS_O_WORKDIR/pi_serial

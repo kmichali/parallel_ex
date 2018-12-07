@@ -1,0 +1,26 @@
+#!/bin/bash
+#PBS -l walltime=24:00:00 
+#PBS -l select=1:ncpus=16:mem=1gb
+
+
+module load intel-suite mpi/intel-2018
+
+echo "serial:"
+$PBS_O_WORKDIR/pi_serial
+
+echo "mpi:"
+mpiexec $PBS_O_WORKDIR/pi_mpi
+
+export OMP_NUM_THREADS=16
+echo "openmp:"
+$PBS_O_WORKDIR/pi_openmp
+
+export OMP_NUM_THREADS=16
+echo "hybrid:"
+mpiexec -n 1 $PBS_O_WORKDIR/pi_hybrid
+
+
+
+
+
+
