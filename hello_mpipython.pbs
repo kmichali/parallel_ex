@@ -1,0 +1,13 @@
+#!/bin/sh
+#PBS -l walltime=24:00:00
+#PBS -l select=1:ncpus=4:mem=1gb
+
+module load intel-suite
+module load mpi
+module load anaconda3/personal
+source activate mpi
+
+cd $PBS_O_WORKDIR
+
+mpiexec python hello_mpi.py 
+
