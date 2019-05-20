@@ -1,6 +1,6 @@
 import time
 
-n = int(10e8)
+n = int(10e9)
 
 start_time = time.time()
 
