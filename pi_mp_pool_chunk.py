@@ -13,13 +13,13 @@ def calc_sum(x):
     return psum
 
 
-n = int(10e8)
+n = int(10e9)
 w = 1.0/n
 chunk = 10000
 
 start_time = time.time()
 
-pool = mp.Pool(4) 
+pool = mp.Pool(24) 
 result = pool.map(calc_sum, range(1,int(n/chunk)+1))
 
 total = functools.reduce(operator.add, result)

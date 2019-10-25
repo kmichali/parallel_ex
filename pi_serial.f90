@@ -7,7 +7,8 @@
        double precision :: duration, timef
  
 
-       n=10000000000
+       !n=10000000000
+       n=1E10
 
        CALL SYSTEM_CLOCK(COUNT_RATE=ticks_sec)
        CALL SYSTEM_CLOCK(COUNT=ini)

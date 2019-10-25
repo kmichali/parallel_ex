@@ -6,17 +6,17 @@
 
 main (int argc, char *argv[])
 {
-  int nthreads, tid, i, chunk;
+  int nthreads, tid, i;
   float a[N],b[N],c[N];
 
   for (i=0; i<N; i++)
      a[i] = b[i] = i*1.0;
-  chunk = 1000;
+  
 
 #pragma omp parallel private(tid,i) shared(a,b,c,nthreads)
    {
 
-#pragma omp for schedule(dynamic,chunk) nowait
+#pragma omp for 
      for (i=0;i<N;i++)
        c[i] = a[i]+b[i];
 
