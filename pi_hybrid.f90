@@ -53,7 +53,7 @@
           if( tduration(i) > total_duration ) total_duration=tduration(i)
        end do 
 
-          print*,n," ",pi," ",total_duration
+          print*,"pi_hybrid",n,pi,total_duration
        endif
        
        deallocate(duration)

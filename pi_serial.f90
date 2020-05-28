@@ -26,7 +26,6 @@
        CALL SYSTEM_CLOCK(COUNT=fin)
        duration=REAL(fin-ini)/ticks_sec
 
-       print*,n,"  ",pi,"  ",duration
-
+       print*,"pi_serial",n,pi,duration
 
        end

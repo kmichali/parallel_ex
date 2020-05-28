@@ -48,7 +48,7 @@ program calc_pi_mpi_version
              if( tduration(i) > total_duration ) total_duration=tduration(i)
           end do
 
-          print*,n," ",pi," ",total_duration
+          print*,"pi_mpi",n,pi,total_duration
        endif
 
        deallocate(duration)
