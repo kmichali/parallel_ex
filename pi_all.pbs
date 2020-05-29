@@ -1,9 +1,8 @@
-#!/bin/bash
 #PBS -l walltime=00:30:00 
 #PBS -l select=1:ncpus=16:mem=1gb
 
 
-module load intel-suite mpi/intel-2018
+module load intel-suite mpi
 
 echo "serial:"
 $PBS_O_WORKDIR/pi_serial
@@ -20,7 +19,7 @@ echo "hybrid:"
 mpiexec -n 1 $PBS_O_WORKDIR/pi_hybrid
 
 
-
+ 
 
 
 
