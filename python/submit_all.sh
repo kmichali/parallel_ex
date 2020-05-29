@@ -1,2 +1,2 @@
-for i in *.pbs; do qsub $i; done
+for i in *.pbs; do echo $i; qsub $i; done
 
