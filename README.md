@@ -25,3 +25,15 @@ Build executables with:
 - parallel just-in-time with numba
 - corresponding PBS scripts
 
+
+
+For Python dependencies, follow:
+
+https://numba.pydata.org/numba-doc/latest/user/installing.html
+
+https://anaconda.org/conda-forge/pypy 
+
+https://anaconda.org/anaconda/mpi4py
+
+https://anaconda.org/auto/multiprocessing
+
