@@ -35,7 +35,6 @@ https://anaconda.org/conda-forge/pypy
 
 https://anaconda.org/anaconda/mpi4py
 
-https://anaconda.org/auto/multiprocessing
 
 
 
