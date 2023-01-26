@@ -1,9 +1,9 @@
 
 # This repo hold codes for teaching parallel codes
 
-## Worked problem: Integration quater unit circle
+## Worked problem: Integrate quater unit circle
 
-This problem (essentially a large sum) lends itself to parallelisation
+This problem (essentially a large sum) lends itself well to parallelisation
 
 ![underlying math](unit_circle_integration.png)
 
