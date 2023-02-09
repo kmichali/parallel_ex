@@ -1,0 +1,11 @@
+#PBS -l walltime=00:10:00 
+#PBS -l select=1:ncpus=1:mem=1gb 
+ 
+module load anaconda3/personal 
+source activate julia_test  
+
+cd $PBS_O_WORKDIR 
+
+julia pi_serial.jl
+
+
