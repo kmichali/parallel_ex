@@ -13,7 +13,7 @@ end
 
 using BenchmarkTools
 
-n = 1_000_000_000
+n = 10_000_000_000
 println(n)
 println(calc_pi(n))
 @btime calc_pi(n)
