@@ -1,5 +1,5 @@
 #PBS -l walltime=00:10:00
-#PBS -l select=2:ncpus=12:mem=4gb:infiniband=true
+#PBS -l select=2:ncpus=12:mem=4gb
 
 module load intel-suite
 module load mpi
